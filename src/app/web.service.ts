@@ -8,7 +8,7 @@ import { Produto } from './listar/Produto';
 })
 export class WebService {
 
-  baseUrl = "https://banco-dados-teste.glitch.me/api";
+  baseUrl = "https://sc3003434-ead2.glitch.me/api";
 
   getProdutos() : Observable<Produto[]> {
     return this.http.get<Produto[]>(this.baseUrl + "/produtos")
