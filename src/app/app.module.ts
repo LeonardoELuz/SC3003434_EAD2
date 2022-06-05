@@ -1,14 +1,27 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http'
+
 
 import { AppComponent } from './app.component';
+import { ListarComponent } from './listar/listar.component';
+import { CadastrarComponent } from './cadastrar/cadastrar.component';
+import { FormsModule } from '@angular/forms';
+import { AppRoutingModule } from './app-routing.module';
+import { AtualizarComponent } from './atualizar/atualizar.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ListarComponent,
+    CadastrarComponent,
+    AtualizarComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
